@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H-GYM For Healthy Life</title>
+    <meta name="description" content="This is our book store">
+    <meta name="keywords" content="Books ,BookStore,reading,Knowledge">
+    <meta name="author" content="WalidAmozon">
+    <!-- Render All Elements Normally across all browsers-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
+    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- jquery cdn -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- scripts -->
+    <!-- bootstrap javascript cdn -->
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body onload=fnBrowserDetect() class="Home">
+
+    <script>
+        window.addEventListener('scroll', function () {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+
+    </script>
+
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="#">
+                <h2>Logo</h2>
+            </a>
+            <nav>
+                <div class="bar-icon-container">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="product.html">Product</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Bootstrap	Slider -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="info">
+                    <h1>The Healthy Way Of Life</h1>
+                    <p>"Get a Jump On Your Day"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="info">
+                    <h1>Dare to be great.</h1>
+                    <p>"The Healthy Way Of Life"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="info">
+                    <h1>Get a Jump On Your Day.</h1>
+                    <p>"Dare to be great"</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!-- Fire Fox Section -->
+
+    <div class="fire-fox-meassage">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <h4>seems like you are using FireFox please change to chrome for better experience </h4>
+    </div>
+
+
+    <!--main section -->
+
+    <div class="section">
+        <div class="col-1-1">
+            <div class="container">
+                <div class="text">
+                    <h2>THE BENEFITS OF BEING, WITH MAX & AEGLE</h2>
+                    <p>We're constantly looking to evolve our club and one of the simple ways that we do this is to
+                        offer our members a wide selection of benefits, that aim to make their individual experiences
+                        the best in class. Below are a selection of the current benefits we have on offer. Look out for
+                        more in the months ahead.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-2-1">
+            <div class="container">
+                <div class="images-container">
+                    <img class="" src="images/section-1.jpg" alt="people running at a GYM">
+                    <img src="Images/section-1min-1.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h2><span>GET</span> ACCESS</h2>
+                    <p>Included as part of our world-class facilities, our members can enjoy a range of complimentary
+                        benefits on us; unlimited classes, health & lifestyle assessment, starter session & Fit3D Body
+                        Scan, 10% off all in-club food & beverages, and 15% off meal plan from 100&TEN. Request a call,
+                        to see what else you can access.
+                    </p>
+                    <div class="request-call">
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3-1">
+            <div class="container">
+                <div class="images-container">
+                    <img class="" src="images/section-2.jpg" alt="people running at a GYM">
+                    <img src="Images/section-2min.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h2><span>FELL</span> QUALITY</h2>
+                    <p>We’ve focused on delivering quality at every point; filtered water stations & free bottled water,
+                        Malin + Goetz hair & body products, personal care accessories, 24 hour security with dedicated
+                        parking for our members, and state-of-the-art training equipment & group exercise studios.
+                        Designed by us, just for you.
+                    </p>
+                    <div class="request-call">
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4-1">
+            <div class="container">
+                <div class="images-container">
+                    <img class="" src="images/section-4.jpg" alt="people running at a GYM">
+                    <img src="Images/section-4-min.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h2><span>BE</span> INSPIRED</h2>
+                    <p>Our space is a dynamic one. For individuals and families. To enjoy a range of well-being benefits
+                        that include; our 100&TEN restaurant & juice bar, expert nutrition & coaching, activities for
+                        kids & the whole family, fitness experiences tailored to your lifestyle and some dedicated time
+                        & space for the ladies.
+                    </p>
+                    <div class="request-call">
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5-1">
+            <div class="container">
+                <div class="images-container">
+                    <img class="" src="images/section-3.jpg" alt="people running at a GYM">
+                    <img src="Images/section-3-min.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h2><span>HAVE</span> PROPOSE</h2>
+                    <p>Included as part of our world-class facilities, our members can enjoy a range of
+                        complimentary
+                        benefits on us; unlimited classes, health & lifestyle assessment, starter session & Fit3D
+                        Body
+                        Scan, 10% off all in-club food & beverages, and 15% off meal plan from 100&TEN. Request a
+                        call,
+                        to see what else you can access.
+                    </p>
+                    <div class="request-call">
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Call Section -->
+
+
+    <div class="calc-weight">
+        <div class="container">
+            <div class="div-text">
+                <h1>Body Mass Index </h1>
+            </div>
+            <div class="form-container">
+                <form action="GET">
+                    <h1>BMI Calculator</h1>
+                    <input type="text" name="Height" id="Weight " placeholder="Weight (kg)">
+                    <input type="text" name="Weight" id="height" placeholder="Height (cm)">
+                    <input type="button" value="Result">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- App Section -->
+
+    <div class="our-app">
+        <div class="container">
+            <div class="text-continar">
+                <h2>Tech Gym App</h2>
+                <p>Unravel the full potential of training with Wellness Ball Active Sitting thanks to the countless
+                    workouts available on TechGym App. Let the TechGym Coach guide you and get superior results,
+                    faster.</p>
+            </div>
+
+            <div class="app-image">
+                <img src="images/our-app.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="ft-col-1">
+                <h2>USEFUL LINKS </h2>
+                <div class="links">
+                    <ul>
+                        <li><a href="error.html">Account</a></li>
+                        <li><a href="error.html">Loyalty Program</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Gallary</a></li>
+                        <li><a href="contact.html">Find us</a></li>
+                        <li><a href="error.html">Brands</a></li>
+                        <li><a href="error.html">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-col-2">
+                <h2>SUPPORT</h2>
+                <div class="links">
+                    <ul>
+                        <li><a href="error.html">FAQ</a></li>
+                        <li><a href="error.html">Shipping</a></li>
+                        <li><a href="#">Covid-19 Updates</a></li>
+                        <li><a href="error.html">Privacy</a></li>
+                        <li><a href="error.html">Terms</a></li>
+                        <li><a href="error.html">Warranty & Returns</a></li>
+                        <li><a href="error.html">Wholesale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-col-3">
+                <h2>COMPANY</h2>
+                <div class="links">
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="error.html">Reviews</a></li>
+                        <li><a href="error.html">Community</a></li>
+                        <li><a href="error.html">Careers</a></li>
+                        <li><a href="error.html">Financing Options</a></li>
+                        <li><a href="error.html">Showrooms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-col-3">
+                <h2>CONNECT</h2>
+                <div class="links">
+                    <div class="social-media">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <h2>SIGN UP FOR $10 OFF </h2>
+                <p>Sign up to our mailing list for exclusive weekly discounts.</p>
+                <div class="footer-form">
+                    <form action="">
+                        <input type="email" name="Email-footer" id="Email" placeholder="Email">
+                        <input type="text" name="username-footer" id="Name" placeholder="Name">
+                        <input type="submit" name="submit-footer" id="submit" value=" SIGN UP NOW">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-second-part">
+                <div class="images-container">
+                    <img src="Images/master.png" alt="">
+                    <img src="Images/zip.png" alt="">
+                    <img src="Images/visa.png" alt="">
+                    <img src="Images/humm.png" alt="">
+                    <img src="Images/amex.png" alt="">
+                </div>
+                <div class="footer-text">
+                    <span>TERMS OF USE © 2022 | www.walid-project.com | ALL RIGHTS RESERVED</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
