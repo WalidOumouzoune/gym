@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
     <script type="module" src="js/main.js"></script>
+    <script src="/js/main.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <!-- font awesome cdn -->
@@ -30,6 +31,19 @@
     <!-- bootstrap javascript cdn -->
     <script type="text/javascript"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="https://www.digimind.com/hubfs/cropped-Digimind_Glyph_Red_600-192x192.png">
+
+
+    <script>
+        function greet() {
+            let name = document.getElementById('Weight').value;
+            alert('Hello ' + name);
+        }
+    </script>
+
+
 
 </head>
 
@@ -50,15 +64,7 @@
                 <h2>Logo</h2>
             </a>
             <nav>
-                <div class="bar-icon-container">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="product.html">Product</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a href="contact.html">Contact</a></li>
-                </ul>
+                <a class="btn-primary" id="btn-Contact" href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -114,18 +120,12 @@
     <!--main section -->
 
     <div class="section">
-        <div class="col-1-1">
-            <div class="container">
-                <div class="text">
-                    <h2>THE BENEFITS OF BEING, WITH MAX & AEGLE</h2>
-                    <p>We're constantly looking to evolve our club and one of the simple ways that we do this is to
-                        offer our members a wide selection of benefits, that aim to make their individual experiences
-                        the best in class. Below are a selection of the current benefits we have on offer. Look out for
-                        more in the months ahead.</p>
-                </div>
-            </div>
 
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0099ff" fill-opacity="1"
+                d="M0,0L60,32C120,64,240,128,360,144C480,160,600,128,720,144C840,160,960,224,1080,229.3C1200,235,1320,181,1380,154.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
         <div class="col-2-1">
             <div class="container">
                 <div class="images-container">
@@ -213,22 +213,150 @@
 
     <!-- Call Section -->
 
+    <!-- <script>
+        function calcBMI() {
+            let Weight = document.getElementById('Weight').value;
+            let height = document.getElementById('height').value;
+            let BMI = Weight / (height * height);
+            alert(BMI);
+        }
+    </script> -->
 
-    <div class="calc-weight">
+
+
+    <style>
+        .trusted-by {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        }
+
+        @media (max-width:777px) {
+            .trusted-by {
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            }
+        }
+
+        @media (max-width:977px) {
+            .trusted-by {
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            }
+        }
+
+        .clients-logo__item {
+            text-align: center;
+        }
+
+        .TrustedDiv {
+            margin-top: 10px;
+        }
+    </style>
+
+    <div class="TrustedDiv">
         <div class="container">
-            <div class="div-text">
-                <h1>Body Mass Index </h1>
-            </div>
-            <div class="form-container">
-                <form action="GET">
-                    <h1>BMI Calculator</h1>
-                    <input type="text" name="Height" id="Weight " placeholder="Weight (kg)">
-                    <input type="text" name="Weight" id="height" placeholder="Height (cm)">
-                    <input type="button" value="Result">
-                </form>
+            <h2><span>Trusted</span> By</h2>
+            <div class="trusted-by">
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Accenture_gray.svg"
+                        alt="Accenture" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Asus_gray.svg"
+                        alt="Asus" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Audi_gray.svg"
+                        alt="Audi" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Axa_gray.svg"
+                        alt="AXA" width="60" height="60">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/BBDO_gray.svg"
+                        alt="BBDO" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Canon_gray.svg"
+                        alt="Canon" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Danone_gray.svg"
+                        alt="Danone" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Deloitte_gray.svg"
+                        alt="Deloitte" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Dentsu_gray.svg"
+                        alt="Dentsu" width="80" height="80">
+                </div>
+
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Fujifilm_gray.svg"
+                        alt="Fujifilm" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Honda_gray.svg"
+                        alt="Honda" width="80" height="80">
+                </div>
+
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/HP_gray.svg"
+                        alt="HP" width="60" height="60">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/McCann_gray.svg"
+                        alt="McCann" width="80" height="80">
+                </div>
+
+
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Nike_gray.svg"
+                        alt="Nike" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/publicis%20worldwide_gray.svg"
+                        alt="Publicis" width="80" height="80">
+                </div>
+
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Roche_gray.svg"
+                        alt="Roche" width="80" height="80">
+                </div>
+
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/schneider%20electric_gray.svg"
+                        alt="Schneider Electric" width="80" height="80">
+                </div>
+
+                <div class="clients-logo__item ta-center">
+                    <img src="https://www.digimind.com/hubfs/Website%20Visual%20assets%20S2/Digimind%20website%20-%20Clients%20Logos/Gray/SVG/Sodexo_gray.svg"
+                        alt="Sodexo" width="80" height="80">
+                </div>
             </div>
         </div>
     </div>
+
+
+
 
 
     <!-- App Section -->
@@ -236,7 +364,7 @@
     <div class="our-app">
         <div class="container">
             <div class="text-continar">
-                <h2>Tech Gym App</h2>
+                <h2 style="    margin-bottom: 51px;"><span>Tech Gym</span> App</h2>
                 <p>Unravel the full potential of training with Wellness Ball Active Sitting thanks to the countless
                     workouts available on TechGym App. Let the TechGym Coach guide you and get superior results,
                     faster.</p>
@@ -247,6 +375,32 @@
             </div>
         </div>
     </div>
+
+    <div class="calc-weight">
+        <div class="container">
+            <div class="div-text">
+                <h2><span>Body Mass</span> Index</h2>
+            </div>
+            <div class="form-container">
+                <form action="GET">
+                    <h1>BMI Calculator</h1>
+                    <input type="text" name="Height" id="Weight " placeholder="Weight (kg)">
+                    <input type="text" name="Weight" id="height" placeholder="Height (cm)">
+                    <input type="button" onclick="greet()" value="Result">
+                </form>
+            </div>
+        </div>
+        <div class="lastSvg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0099ff" fill-opacity="1"
+                    d="M0,160L26.7,181.3C53.3,203,107,245,160,229.3C213.3,213,267,139,320,128C373.3,117,427,171,480,192C533.3,213,587,203,640,181.3C693.3,160,747,128,800,117.3C853.3,107,907,117,960,128C1013.3,139,1067,149,1120,170.7C1173.3,192,1227,224,1280,240C1333.3,256,1387,256,1413,256L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+    </div>
+
+
 
 
     <!-- footer -->
