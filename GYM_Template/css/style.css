@@ -106,6 +106,8 @@ header {
 	font-size: 16px;
 	border-radius: 6px;
 	font-weight: 600;
+	color: #101820FF;
+	background-color: white;
 }
 
 /* End Header */
@@ -290,8 +292,7 @@ header {
 
 h2 span {
 	font-weight: bold;
-	color: var(--main-color, #414047);
-	border-bottom: 2px solid var(--main-color, #414047);
+	border-bottom: 5px solid #101820FF;
 }
 
 .section .text-container p {
@@ -333,7 +334,7 @@ h2 span {
 }
 
 .section .col-5-1 .images-container img:last-child {
-	top: 55%;
+	top: 23%;
 	right: 5%;
 
 }
@@ -397,7 +398,13 @@ h2 span {
 /* End BMI Calc  */
 
 
+.TrustedDiv {
+	margin-bottom: 60px;
+}
 
+.TrustedDiv h2 {
+	padding-bottom: 20px;
+}
 
 .our-app {
 	margin: 0px 0px 50px;
@@ -414,6 +421,13 @@ h2 span {
 	width: 100%;
 }
 
+.apps-play-store {
+	padding: 25px;
+}
+
+.apps-play-store img {
+	width: 40%;
+}
 
 
 
