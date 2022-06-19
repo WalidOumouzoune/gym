@@ -1,1 +1,695 @@
+/* Start Global Rules */
 
+
+:root {
+	--main-color: #0099ff;
+	--transparent-color: rgb(15 116 143 / 70%);
+	--section-padding: 60px;
+	--section-color: #19c8fa;
+
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* I'm using the same containers that bootstrap V.3 use   */
+
+/* Small  */
+@media (min-width:768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+/* Meduim */
+
+@media (min-width:992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+/* Large  */
+@media (min-width:1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+/* End Global  Rules   */
+
+
+/* Navigation Bar */
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	transition: .5s;
+}
+
+header {
+	padding: 10px;
+}
+
+.header .container {
+	display: flex;
+	align-items: center;
+}
+
+.header .logo {
+	color: white;
+}
+
+.header .container nav {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*Apply styles after scroll*/
+
+.scrolling-active {
+	background-color: #101820FF !important;
+	box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+#btn-Contact {
+	text-decoration: none;
+	padding: 8px 21px;
+	font-size: 16px;
+	border-radius: 6px;
+	font-weight: 600;
+}
+
+/* End Header */
+
+
+
+
+
+
+
+
+
+
+/* Start Slider*/
+
+#carouselExampleIndicators {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+#carouselExampleIndicators .carousel-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+
+#carouselExampleIndicators .carousel-inner:before {
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: url('https://images.unsplash.com/photo-1623874514711-0f321325f318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+	background: url('https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+	background: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item h1 {
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item p {
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+/* End Slider*/
+
+
+
+
+/* Start Section */
+
+
+@media (max-width:767px) {
+	.section .col-1 .text h2 {
+		width: 60%;
+	}
+}
+
+/* -------------------------------------- */
+.section .col-1 .text h2 {
+	color: #414047;
+	margin-bottom: 25px;
+	border-bottom: 3px solid #414047;
+	line-height: 1.8;
+	width: fit-content;
+}
+
+.section .col-1-1 .text p {
+	font-size: 15px;
+	margin-bottom: 15px;
+	line-height: 1.8;
+}
+
+/* -------------------------------------- */
+
+.col-1-1 {
+	margin-bottom: 50px;
+}
+
+.section .col-2-1,
+.section .col-3-1,
+.section .col-4-1,
+.section .col-5-1 {
+	background-color: #eff1f3;
+	margin-bottom: 60px;
+}
+
+.section .container {
+	padding: 20px;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.section .container .images-container img:first-child {
+	max-width: 75%;
+	clip-path: polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 120px);
+}
+
+.section .images-container img:last-child {
+	max-width: 25%;
+	border: 4px solid white;
+	border-radius: none;
+	position: absolute;
+	right: 10%;
+	top: 20%;
+}
+
+.section .images-container {
+	position: relative;
+	top: 20%;
+}
+
+.section .images-container:after {
+	content: "+";
+	position: absolute;
+	color: black;
+	font-size: 60px;
+	font-weight: bold;
+	top: 0;
+	left: 0;
+}
+
+.section .images-container:after:hover {
+	color: var(--section-color, #19c8fa);
+}
+
+.section .text-container h2 {
+	margin-bottom: 20px;
+	font-weight: normal;
+	line-height: 1.6;
+}
+
+h2 span {
+	font-weight: bold;
+	color: var(--main-color, #414047);
+	border-bottom: 2px solid var(--main-color, #414047);
+}
+
+.section .text-container p {
+	line-height: 1.8;
+	font-size: 14px;
+}
+
+.section .text-container a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px;
+	border-radius: 5%;
+	margin: 20px 0;
+	background-color: #101820FF;
+	color: white;
+	transition: 0.3s;
+
+}
+
+.section .text-container a i {
+	color: white;
+	font-size: 16px;
+	margin: 0 7px;
+
+}
+
+.section .text-container a:hover {
+	background-color: var(--section-color, #19c8fa)
+}
+
+@media (max-width:767px) {
+	.section .text-container {
+		order: -1;
+	}
+
+	.section .images-container {
+		top: 0;
+	}
+}
+
+.section .col-5-1 .images-container img:last-child {
+	top: 55%;
+	right: 5%;
+
+}
+
+.section .col-5-1 .images-container,
+.section .col-3-1 .images-container {
+	order: 2;
+}
+
+/* End Section */
+
+
+
+/* Start BMI Calc  */
+
+.calc-weight {
+	margin: 60px 0 0;
+}
+
+.calc-weight .form-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.calc-weight .form-container form {
+	width: 500px;
+	height: 370px;
+	padding: 30px;
+	box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
+	border-radius: 16px;
+}
+
+
+@media (max-width:768px) {
+	.calc-weight .div-text h1 {
+		font-size: 2.5rem;
+	}
+}
+
+.calc-weight input {
+	width: 100%;
+	padding: 14px;
+	margin: 20px 0;
+	border: none;
+	background: #f0F0F0;
+	border-radius: 8px;
+}
+
+.calc-weight input[type="text"]:focus {
+	outline: none;
+	border-bottom: 2px solid #414;
+}
+
+.calc-weight input[type="button"] {
+	background: #414;
+	color: white;
+	width: 50%;
+	cursor: pointer;
+}
+
+/* End BMI Calc  */
+
+
+
+
+.our-app {
+	margin: 0px 0px 50px;
+	padding-top: 20px;
+	background-color: #f0f0f0;
+}
+
+.our-app .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.our-app .container .app-image img {
+	width: 100%;
+}
+
+
+
+
+
+
+/* Footer */
+
+
+footer {
+	background-color: #101820FF
+}
+
+footer .container {
+	padding-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px
+}
+
+footer .container h2 {
+	color: white;
+	font-size: 25px;
+	margin: 30px 0;
+	line-height: 1.6;
+	border-bottom: 2px solid;
+}
+
+footer .container .links .social-media i {
+	font-size: 25px;
+	margin-left: 10px;
+	color: white;
+}
+
+footer .container .links ul li a {
+	text-decoration: none;
+	display: block;
+	width: fit-content;
+	margin: 20px 0;
+	font-size: 18px;
+	color: white;
+	border-bottom: 2px solid transparent;
+}
+
+footer .container .links ul li a:hover {
+	border-bottom: 2px solid white;
+}
+
+footer .footer-second-part .images-container {
+	margin: 20px 0 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer .footer-second-part .images-container img {
+	margin-left: 20px;
+}
+
+/* footer .footer-second-part  */
+
+.footer-second-part .footer-text {
+	text-align: center;
+	color: white;
+	padding: 10px 0px;
+}
+
+.footer-form input {
+	display: block;
+	padding: 9px;
+	margin: 8px 0;
+	width: 100%;
+	border: none;
+}
+
+.footer-form input[type=submit] {
+	font-size: 18px;
+	background: repeating-linear-gradient(45deg, black, transparent 100px);
+	color: white;
+	transition: .3s;
+}
+
+.footer-form input[type=submit]:hover {
+	cursor: pointer;
+	background-color: white;
+}
+
+footer .ft-col-3 p {
+	color: white;
+	margin: 15px 0;
+}
+
+@media (max-width:767px) {
+	footer .links {
+		display: none;
+	}
+
+	footer .container {
+		display: block;
+	}
+
+	footer .container h2 {
+		margin: 7px;
+	}
+}
+
+/* End Footer */
+
+
+
+
+/* Error page */
+
+.error .image-text {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.error .image-text .img-container img {
+	max-width: 100%;
+}
+
+.error h1 {
+	color: var(--main-color, #404147);
+	font-size: 60px;
+	font-weight: 900;
+	text-align: center;
+}
+
+@media (max-width:767px) {
+	.error h1 {
+		margin-top: 10px;
+		font-size: 30px;
+	}
+}
+
+.error a {
+	display: block;
+	width: fit-content;
+	padding: 20px;
+	text-decoration: none;
+	background-color: #ff725e;
+	color: white;
+	margin: 20px auto;
+	font-size: 32px;
+	transition: .3s;
+	border-radius: 3%;
+}
+
+.error a:hover {
+	background: var(--main-color, #404147);
+}
+
+@media (max-width:767px) {
+	.error a {
+		padding: 18px;
+	}
+}
+
+/* End error page */
+
+
+/* ---------------------------------New Page is coming -------------------- */
+/* Start New PAGE about.html */
+
+
+
+.our-services {
+	margin-top: 50px;
+}
+
+.about-nav .nav-content {
+	width: fit-content;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	background-color: var(--main-color, #404147);
+}
+
+.about-nav .nav-content a {
+	color: white;
+}
+
+.our-services .info {
+	text-align: center;
+	padding-bottom: var(--section-padding, 60px);
+}
+
+.info h2 {
+	font-size: 40px;
+	line-height: 1.6;
+	margin: 20px 0;
+	letter-spacing: 2px;
+}
+
+.info h2+p {
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+.our-services .ab-col-2 .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.ab-col-2 {
+	background-color: #f0f0f0;
+	padding: 20px 0;
+}
+
+.ab-col-2 .card {
+	text-align: center;
+	display: grid;
+	align-items: center;
+}
+
+.ab-col-2 .card h2 {
+	margin: 15px 0;
+	font-weight: 100;
+}
+
+.ab-col-2 .card p {
+	line-height: 1.6;
+	font-size: 14px;
+}
+
+.ab-col-3 .info {
+	margin-top: 40px;
+}
+
+.ab-col-4 .container .images-container img {
+	max-width: 100%;
+	height: 100%;
+}
+
+.ab-col-4 .container {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+	padding-bottom: var(--section-padding);
+}
+
+.ab-col-5 .container .info a {
+	display: inline-block;
+	padding: 20px 45px;
+	background: #404147;
+	color: white;
+	margin: 50px 0;
+	text-decoration: none;
+	border-radius: 4%;
+}
+
+
+
+/* Fire Fox Message : design looks diffrent when you switch Browsers will tell it*/
+
+.fire-fox-meassage {
+	display: none;
+	width: 240px;
+	position: fixed;
+	z-index: 4;
+	top: 50%;
+	background: yellow;
+	padding: 10px;
+	animation: opacity-zero 10s 8s linear both;
+}
+
+@keyframes opacity-zero {
+	to {
+		opacity: 0;
+	}
+}
+
+/* End .fire-fox-meassage */
