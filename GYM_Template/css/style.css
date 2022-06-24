@@ -1,4 +1,4 @@
-/* Start Global Rules */
+/* -----------Global Rules -------------*/
 
 
 :root {
@@ -17,6 +17,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 }
 
 html {
@@ -36,8 +37,6 @@ ul {
 	padding: 0 15px;
 	margin: 0 auto;
 }
-
-/* I'm using the same containers that bootstrap V.3 use   */
 
 /* Small  */
 @media (min-width:768px) {
@@ -61,10 +60,9 @@ ul {
 	}
 }
 
-/* End Global  Rules   */
 
 
-/* Navigation Bar */
+/*--------------Navigation Bar------------- */
 
 .header {
 	position: fixed;
@@ -85,6 +83,7 @@ header {
 
 .header .logo {
 	color: white;
+	text-decoration: none;
 }
 
 .header .container nav {
@@ -110,18 +109,10 @@ header {
 	background-color: white;
 }
 
-/* End Header */
 
 
 
-
-
-
-
-
-
-
-/* Start Slider*/
+/*-----------Start Slider -------------*/
 
 #carouselExampleIndicators {
 	position: relative;
@@ -201,13 +192,9 @@ header {
 	font-weight: 500;
 }
 
-/* End Slider*/
 
 
-
-
-/* Start Section */
-
+/*---------Section------------- */
 
 @media (max-width:767px) {
 	.section .col-1 .text h2 {
@@ -215,7 +202,6 @@ header {
 	}
 }
 
-/* -------------------------------------- */
 .section .col-1 .text h2 {
 	color: #414047;
 	margin-bottom: 25px;
@@ -230,7 +216,6 @@ header {
 	line-height: 1.8;
 }
 
-/* -------------------------------------- */
 
 .col-1-1 {
 	margin-bottom: 50px;
@@ -319,10 +304,6 @@ h2 span {
 
 }
 
-.section .text-container a:hover {
-	background-color: var(--section-color, #19c8fa)
-}
-
 @media (max-width:767px) {
 	.section .text-container {
 		order: -1;
@@ -344,67 +325,46 @@ h2 span {
 	order: 2;
 }
 
-/* End Section */
 
 
 
-/* Start BMI Calc  */
+/*---------TrustedBy-------------*/
 
-.calc-weight {
-	margin: 60px 0 0;
+
+.trusted-by {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 }
 
-.calc-weight .form-container {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.calc-weight .form-container form {
-	width: 500px;
-	height: 370px;
-	padding: 30px;
-	box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
-	border-radius: 16px;
-}
-
-
-@media (max-width:768px) {
-	.calc-weight .div-text h1 {
-		font-size: 2.5rem;
+@media (max-width:777px) {
+	.trusted-by {
+		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 	}
 }
 
-.calc-weight input {
-	width: 100%;
-	padding: 14px;
-	margin: 20px 0;
-	border: none;
-	background: #f0F0F0;
-	border-radius: 8px;
+@media (max-width:977px) {
+	.trusted-by {
+		grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	}
 }
 
-.calc-weight input[type="text"]:focus {
-	outline: none;
-	border-bottom: 2px solid #414;
+.clients-logo__item {
+	text-align: center;
 }
-
-.calc-weight input[type="button"] {
-	background: #414;
-	color: white;
-	width: 50%;
-	cursor: pointer;
-}
-
-/* End BMI Calc  */
-
 
 .TrustedDiv {
+	margin-top: 10px;
 	margin-bottom: 60px;
 }
 
 .TrustedDiv h2 {
 	padding-bottom: 20px;
 }
+
+
+
+/*-------App Section---------*/
 
 .our-app {
 	margin: 0px 0px 50px;
@@ -432,8 +392,101 @@ h2 span {
 
 
 
+/*-------Contact Section---------*/
 
-/* Footer */
+.contact-section {
+	margin: 60px 0;
+	background-color: #f0F0F0;
+}
+
+.contact-section .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.contact-section .image-container {
+	position: relative;
+}
+
+.contact-section .image-container h2,
+.contact-section .image-container h1 {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 30px;
+	font-weight: bold;
+	color: #404147;
+	width: fit-content;
+}
+
+@media (max-width:767px) {
+
+	.contact-section .image-container h2,
+	.contact-section .image-container h1 {
+		font-size: unset;
+	}
+}
+
+.contact-section .container .image-container h2 {
+	top: 10%;
+}
+
+.contact-section .container .image-container img {
+	max-width: 100%;
+	max-height: 600px;
+}
+
+.contact-section input {
+	width: 100%;
+	padding: 14px;
+	margin: 20px 0;
+	border: none;
+	border-radius: 5px;
+}
+
+.contact-section input[name]:focus {
+	outline: none;
+	border-bottom: 2px solid #101820FF;
+}
+
+.contact-section input[type="button"] {
+	background: #101820FF;
+	color: white;
+	width: 50%;
+	cursor: pointer;
+}
+
+.contact-section textarea {
+	width: 100%;
+	height: 200px;
+	resize: none;
+	border-radius: 5px;
+	border: none;
+	padding: 15px;
+}
+
+.contact-section textarea:focus {
+	outline: none;
+}
+
+/*----------find-Us Section ----------*/
+
+.mapouter {
+	position: relative;
+	text-align: right;
+	margin-bottom: 50px;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+}
+
+
+
+
+/*---------- Footer------------ */
 
 
 footer {
@@ -537,7 +590,7 @@ footer .ft-col-3 p {
 
 
 
-/* Error page */
+/*--------Error page----------*/
 
 .error .image-text {
 	display: grid;
@@ -549,7 +602,7 @@ footer .ft-col-3 p {
 }
 
 .error h1 {
-	color: var(--main-color, #404147);
+	color: #101820FF;
 	font-size: 60px;
 	font-weight: 900;
 	text-align: center;
@@ -567,16 +620,12 @@ footer .ft-col-3 p {
 	width: fit-content;
 	padding: 20px;
 	text-decoration: none;
-	background-color: #ff725e;
+	background-color: #101820FF;
 	color: white;
 	margin: 20px auto;
 	font-size: 32px;
 	transition: .3s;
 	border-radius: 3%;
-}
-
-.error a:hover {
-	background: var(--main-color, #404147);
 }
 
 @media (max-width:767px) {
@@ -585,125 +634,7 @@ footer .ft-col-3 p {
 	}
 }
 
-/* End error page */
-
-
-/* ---------------------------------New Page is coming -------------------- */
-/* Start New PAGE about.html */
-
-
-
-.our-services {
-	margin-top: 50px;
+a.buttonsHover:hover,
+input.buttonsHover:hover {
+	background-color: black;
 }
-
-.about-nav .nav-content {
-	width: fit-content;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	background-color: var(--main-color, #404147);
-}
-
-.about-nav .nav-content a {
-	color: white;
-}
-
-.our-services .info {
-	text-align: center;
-	padding-bottom: var(--section-padding, 60px);
-}
-
-.info h2 {
-	font-size: 40px;
-	line-height: 1.6;
-	margin: 20px 0;
-	letter-spacing: 2px;
-}
-
-.info h2+p {
-	font-weight: bold;
-	font-size: 15px;
-	margin-bottom: 20px;
-}
-
-p {
-	line-height: 1.6;
-}
-
-.our-services .ab-col-2 .container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 30px;
-}
-
-.ab-col-2 {
-	background-color: #f0f0f0;
-	padding: 20px 0;
-}
-
-.ab-col-2 .card {
-	text-align: center;
-	display: grid;
-	align-items: center;
-}
-
-.ab-col-2 .card h2 {
-	margin: 15px 0;
-	font-weight: 100;
-}
-
-.ab-col-2 .card p {
-	line-height: 1.6;
-	font-size: 14px;
-}
-
-.ab-col-3 .info {
-	margin-top: 40px;
-}
-
-.ab-col-4 .container .images-container img {
-	max-width: 100%;
-	height: 100%;
-}
-
-.ab-col-4 .container {
-	text-align: center;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	gap: 20px;
-	padding-bottom: var(--section-padding);
-}
-
-.ab-col-5 .container .info a {
-	display: inline-block;
-	padding: 20px 45px;
-	background: #404147;
-	color: white;
-	margin: 50px 0;
-	text-decoration: none;
-	border-radius: 4%;
-}
-
-
-
-/* Fire Fox Message : design looks diffrent when you switch Browsers will tell it*/
-
-.fire-fox-meassage {
-	display: none;
-	width: 240px;
-	position: fixed;
-	z-index: 4;
-	top: 50%;
-	background: yellow;
-	padding: 10px;
-	animation: opacity-zero 10s 8s linear both;
-}
-
-@keyframes opacity-zero {
-	to {
-		opacity: 0;
-	}
-}
-
-/* End .fire-fox-meassage */
