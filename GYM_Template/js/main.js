@@ -22,8 +22,3 @@ window.addEventListener('scroll', function () {
     header.classList.toggle('scrolling-active', windowPosition);
 })
 
-
-function goBackToLastPage() {
-    window.history.go(-1)
-}
-
