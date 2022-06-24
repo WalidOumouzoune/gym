@@ -6,18 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>H-GYM For Healthy Life</title>
-    <meta name="description" content="This Our GYM">
+    <meta name="description" content="This is H-GYM-Project-203">
     <meta name="keywords" content="GYM ,fitness,body building,Health">
     <meta name="author" content="WalidAmozon">
     <!-- Render All Elements Normally across all browsers-->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&#038;display=swap" rel="stylesheet" />
     <script type="module" src="js/main.js"></script>
-    <script src="/js/main.js"></script>
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <!-- font awesome cdn -->
@@ -36,41 +35,27 @@
     <link rel="shortcut icon" href="https://www.digimind.com/hubfs/cropped-Digimind_Glyph_Red_600-192x192.png">
 
 
-    <script>
-        function greet() {
-            let name = document.getElementById('Weight').value;
-            alert('Hello ' + name);
-        }
-    </script>
-
 
 
 </head>
 
 <body onload=fnBrowserDetect() class="Home">
 
-    <script>
-        window.addEventListener('scroll', function () {
-            let header = document.querySelector('header');
-            let windowPosition = window.scrollY > 0;
-            header.classList.toggle('scrolling-active', windowPosition);
-        })
-
-    </script>
+    <!-- Header -->
 
     <header class="header">
         <div class="container">
-            <a class="logo" href="#">
+            <a class="logo" href="index.html">
                 <h2>Logo</h2>
             </a>
             <nav>
-                <a id="btn-Contact" href="contact.html">JOIN US</a>
+                <a id="btn-Contact" href="sign.html">JOIN US</a>
             </nav>
         </div>
     </header>
 
 
-    <!-- Bootstrap	Slider -->
+    <!-- Bos Slider -->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -109,23 +94,15 @@
     </div>
 
 
-    <!-- Fire Fox Section -->
-
-    <div class="fire-fox-meassage">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-        <h4>seems like you are using FireFox please change to chrome for better experience </h4>
-    </div>
-
-
     <!--main section -->
 
-    <div class="section">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#101820FF" fill-opacity="1"
+            d="M0,320L30,293.3C60,267,120,213,180,208C240,203,300,245,360,266.7C420,288,480,288,540,272C600,256,660,224,720,197.3C780,171,840,149,900,122.7C960,96,1020,64,1080,53.3C1140,43,1200,53,1260,101.3C1320,149,1380,235,1410,277.3L1440,320L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+        </path>
+    </svg>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#101820FF" fill-opacity="1"
-                d="M0,0L60,32C120,64,240,128,360,144C480,160,600,128,720,144C840,160,960,224,1080,229.3C1200,235,1320,181,1380,154.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-            </path>
-        </svg>
+    <div class="section">
         <div class="col-2-1">
             <div class="container">
                 <div class="images-container">
@@ -142,7 +119,9 @@
                         to see what else you can access.
                     </p>
                     <div class="request-call">
-                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                        <a class=" buttonsHover" onclick="party()" href="tel:+212-621322506"><i
+                                class="fa-solid fa-phone "></i>request a
+                            call</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +143,9 @@
                         Designed by us, just for you.
                     </p>
                     <div class="request-call">
-                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                        <a class=" buttonsHover" onclick="party()" href="tel:+212-621322506"><i
+                                class="fa-solid fa-phone "></i>request a
+                            call</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +167,9 @@
                         & space for the ladies.
                     </p>
                     <div class="request-call">
-                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                        <a class=" buttonsHover" onclick="party()" href="tel:+212-621322506"><i
+                                class="fa-solid fa-phone "></i>request a
+                            call</a>
                     </div>
                 </div>
             </div>
@@ -212,7 +195,9 @@
                         to see what else you can access.
                     </p>
                     <div class="request-call">
-                        <a href="contact.html"><i class="fa-solid fa-phone"></i>request a call</a>
+                        <a class=" buttonsHover" onclick="party()" href="tel:+212-621322506"><i
+                                class="fa-solid fa-phone "></i>request a
+                            call</a>
                     </div>
                 </div>
             </div>
@@ -220,46 +205,7 @@
     </div>
 
 
-    <!-- Call Section -->
-
-    <!-- <script>
-        function calcBMI() {
-            let Weight = document.getElementById('Weight').value;
-            let height = document.getElementById('height').value;
-            let BMI = Weight / (height * height);
-            alert(BMI);
-        }
-    </script> -->
-
-
-
-    <style>
-        .trusted-by {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-        }
-
-        @media (max-width:777px) {
-            .trusted-by {
-                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-            }
-        }
-
-        @media (max-width:977px) {
-            .trusted-by {
-                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-            }
-        }
-
-        .clients-logo__item {
-            text-align: center;
-        }
-
-        .TrustedDiv {
-            margin-top: 10px;
-        }
-    </style>
+    <!-- Trusted Section -->
 
     <div class="TrustedDiv">
         <div class="container">
@@ -364,10 +310,6 @@
         </div>
     </div>
 
-
-
-
-
     <!-- App Section -->
 
     <div class="our-app">
@@ -393,37 +335,15 @@
         </div>
     </div>
 
-    <!--<div class="calc-weight">
-        <div class="container">
-            <div class="div-text">
-                <h2><span>Body Mass</span> Index</h2>
-            </div>
-            <div class="form-container">
-                <form action="GET">
-                    <h1>BMI Calculator</h1>
-                    <input type="text" name="Height" id="Weight " placeholder="Weight (kg)">
-                    <input type="text" name="Weight" id="height" placeholder="Height (cm)">
-                    <input type="button" onclick="greet()" value="Result">
-                </form>
-            </div>
-        </div>
-        <div class="lastSvg">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#0099ff" fill-opacity="1"
-                    d="M0,160L26.7,181.3C53.3,203,107,245,160,229.3C213.3,213,267,139,320,128C373.3,117,427,171,480,192C533.3,213,587,203,640,181.3C693.3,160,747,128,800,117.3C853.3,107,907,117,960,128C1013.3,139,1067,149,1120,170.7C1173.3,192,1227,224,1280,240C1333.3,256,1387,256,1413,256L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
-                </path>
-            </svg>
-        </div>
 
-    </div>-->
+    <!-- contact Section -->
 
 
-
-    <div class="contact-section">
-        <div class="container">
+    <div class="contact-section" id="contact">
+        <div class=" container">
             <div class="image-container">
                 <h1>Contact us</h1>
-                <img src="https://raw.githubusercontent.com/WalidOumouzoune/H-GYM-Project-203/main/GYM_Template/Images/Coaches-bro.png" alt="">
+                <img src="/Images/Coaches-bro.png" alt="">
                 <h2>will be happy to help</h2>
             </div>
             <div class=" form-container">
@@ -432,89 +352,34 @@
                     <input type="text" name="phone-number" id="phone" placeholder="Phone Number">
                     <input type="Email" name="contact-email" id="ContactEmail" placeholder="Email">
                     <textarea name="" id="text-area-1" placeholder="Message"></textarea>
-                    <input type="button" value="Send a message">
+                    <input type="button" class="buttonsHover" value="Send a message">
                 </form>
             </div>
         </div>
     </div>
 
-    <style>
-        .contact-section {
-            margin: 60px 0;
-            background-color: #f0F0F0;
-        }
 
-        .contact-section .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        }
+    <div class="section-find">
+        <div class="container">
+            <div class="find-us" id="findus">
+                <h2 style="margin-bottom:20px;"><span>Find </span> US</h2>
+            </div>
+            <div class="map">
+                <div class="our-malling">
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="100%" height=300px" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=%20%20City%20Club%20Hassan%202%20Av.%20Hassan%20II,%20Rabat%2010000&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                        <a href="https://123movies-to.org"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        .contact-section .image-container {
-            position: relative;
-        }
-
-        .contact-section .image-container h2,
-        .contact-section .image-container h1 {
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 30px;
-            font-weight: bold;
-            color: #404147;
-            width: fit-content;
-        }
-
-        @media (max-width:767px) {
-
-            .contact-section .image-container h2,
-            .contact-section .image-container h1 {
-                font-size: unset;
-            }
-        }
-
-        .contact-section .container .image-container h2 {
-            top: 10%;
-        }
-
-        .contact-section .container .image-container img {
-            max-width: 100%;
-            max-height: 600px;
-        }
-
-        .contact-section input {
-            width: 100%;
-            padding: 14px;
-            margin: 20px 0;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .contact-section input[name]:focus {
-            outline: none;
-            border-bottom: 2px solid #101820FF;
-        }
-
-        .contact-section input[type="button"] {
-            background: #101820FF;
-            color: white;
-            width: 50%;
-            cursor: pointer;
-        }
-
-        .contact-section textarea {
-            width: 100%;
-            height: 200px;
-            resize: none;
-            border-radius: 5px;
-            border: none;
-            padding: 15px;
-        }
-
-        .contact-section textarea:focus {
-            outline: none;
-        }
-    </style>
 
     <!-- footer -->
 
@@ -526,9 +391,9 @@
                     <ul>
                         <li><a href="error.html">Account</a></li>
                         <li><a href="error.html">Loyalty Program</a></li>
-                        <li><a href="">Product</a></li>
-                        <li><a href="">Gallary</a></li>
-                        <li><a href="contact.html">Find us</a></li>
+                        <li><a href="error.html">Product</a></li>
+                        <li><a href="error.html">Gallary</a></li>
+                        <li><a href="#findus">Find us</a></li>
                         <li><a href="error.html">Brands</a></li>
                         <li><a href="error.html">Events</a></li>
                     </ul>
@@ -540,7 +405,7 @@
                     <ul>
                         <li><a href="error.html">FAQ</a></li>
                         <li><a href="error.html">Shipping</a></li>
-                        <li><a href="#">Covid-19 Updates</a></li>
+                        <li><a href="error.html">Covid-19 Updates</a></li>
                         <li><a href="error.html">Privacy</a></li>
                         <li><a href="error.html">Terms</a></li>
                         <li><a href="error.html">Warranty & Returns</a></li>
@@ -552,8 +417,8 @@
                 <h2>COMPANY</h2>
                 <div class="links">
                     <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="error.html">About us</a></li>
+                        <li><a href="#contact">Contact us</a></li>
                         <li><a href="error.html">Reviews</a></li>
                         <li><a href="error.html">Community</a></li>
                         <li><a href="error.html">Careers</a></li>
